@@ -1,6 +1,6 @@
  
  # Hydee'scrim
-  Welcome to the Hydee'scrim application! This single-page application allows users to search for movies and view their details using the OMDb API. The application is built using HTML, CSS (Tailwind CSS), and JavaScript. It provides a seamless user experience with dynamic data fetching and a responsive design.
+  Welcome to the Hydee'scrim application! This single-page application  that allows users to search for movies and view their details using the OMDb API. The application is built using HTML, CSS (Tailwind CSS), and JavaScript. It provides a seamless user experience with dynamic data fetching and a responsive design.
 
 
    # getting STarted
@@ -10,13 +10,20 @@
 
 
  1. Clone the Repository:
+   -Fork and git clone the code to your local machine.
 
-     git@github.com:kratosudo/Phase-1-Final-Project.
+     -git@github.com:kratosudo/Phase-1-Final-Project.
+
+    
  
+  
+ 2. Navigate to this folder by running this command:
 
- 2. Open the HTML file
+   -cd Phase-1-Final-Project
    
-    Simply open the `index.html` file in your browser
+ 3. Open the code using this command,
+
+  -code .
 
 
   # OMDb API Key
@@ -28,18 +35,15 @@
 
    Enter a movie title in the search bar.
    Click the "Search" button or press the Enter key.
-   Toggle Dark Mode:
-
-   Click the "Toggle Dark Mode" button to switch between light and dark themes.
+   This will display the movie details.
 
 
 
-   # Event Listeners
-  The application uses the following event listeners:
-  Search Button Click: Fetches and displays movies based on the user's query.
-  Enter Key Press in Search Input: Fetches and displays movies when the Enter key is pressed.
-  Dark Mode Toggle Click: Switches between light and dark modes.
-
+   # Technologies used
+    -HTML
+    -CSS
+    -Javascript
+  
 
   # License
   This project is licensed under the MIT License.
