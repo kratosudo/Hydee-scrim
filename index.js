@@ -23,22 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  //add eventListner for dark mode toggle
-  const darkModeToggle = document.createElement("button");
-  darkModeToggle.textContent = "Toggle Dark Mode";
-  darkModeToggle.className = "mt-4 bg-gray-700 text-white py-2 px-4 rounded";
-  document.querySelector("header").appendChild(darkModeToggle);
-
-  darkModeToggle.addEventListener("click", () => {
-    document.body.classList.toggle("bg-gray-900");
-    document.body.classList.toggle("text-gray-100");
-
-    const movieItems = document.querySelectorAll(".movie-item");
-    movieItems.forEach((item) => {
-      item.classList.toggle("bg-gray-700");
-      item.classList.toggle("text-white");
-    });
-  });
+  
 
   //function to fetch movies
   const fetchMovies = async (query) => {
@@ -48,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
       );
       const data = await response.json();
       if (data.Response === "True") {
-        displayMovies(data.Search); // Corrected 'search' to 'Search'
+        displayMovies(data.Search); 
       } else {
         movieList.innerHTML =
           '<p class="text-center text-red-500">No movies found.</p>';
@@ -69,11 +54,6 @@ document.addEventListener("DOMContentLoaded", () => {
         <p>${movie.Year}</p>
         <img src="${movie.Poster}" alt="${movie.Title}" class="w-full h-64 object-cover mt-2">
       `;
-
-      // Add event listener to movie item
-      movieItem.addEventListener("click", () => {
-        handleMovieSelection(movie, movieItem);
-      });
 
       movieList.appendChild(movieItem);
     });
